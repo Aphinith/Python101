@@ -16,5 +16,11 @@ d = {'key1': 'value1', 'key2': 'abcde'}
 
 tuple1 = ('a', 'b', 'c')
 tuple2 = (1, 2, 3, 4)
-print('tuple1: ', tuple1)
-print('tuple2: ', tuple2)
+# print('tuple1: ', tuple1)
+# print('tuple2: ', tuple2)
+
+#tuples are immutable. That is the main difference between lists and tuples
+
+#below are examples of sets. They will not keep duplicate values
+print({1,1,1,1,1,2,2,2,2,2,3,3,3,3,3})
+print(set(['a', 'a', 'a', 'b', 'b', 'b', 'c', 'c', 'c', 'c']))
