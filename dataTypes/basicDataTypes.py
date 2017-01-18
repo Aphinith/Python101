@@ -22,5 +22,9 @@ tuple2 = (1, 2, 3, 4)
 #tuples are immutable. That is the main difference between lists and tuples
 
 #below are examples of sets. They will not keep duplicate values
-print({1,1,1,1,1,2,2,2,2,2,3,3,3,3,3})
-print(set(['a', 'a', 'a', 'b', 'b', 'b', 'c', 'c', 'c', 'c']))
+# print({1,1,1,1,1,2,2,2,2,2,3,3,3,3,3})
+# print(set(['a', 'a', 'a', 'b', 'b', 'b', 'c', 'c', 'c', 'c']))
+
+set1 = {1, 2, 3, 4}
+set1.add(5)
+print('This is set1: ', set1)
