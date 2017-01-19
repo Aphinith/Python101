@@ -20,3 +20,15 @@ my_2D_list = [[1,2,3], [4,5,6], [7,8,9]]
 arange_arr = np.arange(0, 10) # --> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 # print(arange_arr)
+
+
+# np.linspace() -- takes in start, stop, and third argument is a 
+# number for evenly spaced points
+
+evenly_spaced_num = np.linspace(0, 10, 20) # --> (see below)
+   # [  0.           0.52631579   1.05263158   1.57894737   2.10526316
+   # 2.63157895   3.15789474   3.68421053   4.21052632   4.73684211
+   # 5.26315789   5.78947368   6.31578947   6.84210526   7.36842105
+   # 7.89473684   8.42105263   8.94736842   9.47368421  10.        ]
+
+# print(evenly_spaced_num)
