@@ -32,3 +32,32 @@ evenly_spaced_num = np.linspace(0, 10, 20) # --> (see below)
    # 7.89473684   8.42105263   8.94736842   9.47368421  10.        ]
 
 # print(evenly_spaced_num)
+
+
+# identity matrix, use np.eye() -- takes in one number
+
+first_identity_matrix = np.eye(4) # --> (see below)
+  # [[ 1.  0.  0.  0.]
+  #  [ 0.  1.  0.  0.]
+  #  [ 0.  0.  1.  0.]
+  #  [ 0.  0.  0.  1.]]
+
+print(first_identity_matrix)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
