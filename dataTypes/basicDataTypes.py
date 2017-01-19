@@ -28,3 +28,5 @@ tuple2 = (1, 2, 3, 4)
 set1 = {1, 2, 3, 4}
 set1.add(5)
 print('This is set1: ', set1)
+
+print(list(9, 8, 7, 6, 5))
