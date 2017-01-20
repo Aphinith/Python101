@@ -42,10 +42,17 @@ first_identity_matrix = np.eye(4) # --> (see below)
   #  [ 0.  0.  1.  0.]
   #  [ 0.  0.  0.  1.]]
 
-print(first_identity_matrix)
+# print(first_identity_matrix)
 
 
+# creating random matrixes
+# np.random.rand() -- will give you random numbers from 0 to 1
+# np.random.randn() -- will givey ou random numbers for 0 distribution
+# np.random.randint() -- takes in a low, high, and size of array --> will give you 
+#   a random array of integers with the specificed arguments passed in
 
+# reshaping arrays
+# use arr.reshape() -- arguments will be the size of the array (arr refers to array object)
 
 
 
