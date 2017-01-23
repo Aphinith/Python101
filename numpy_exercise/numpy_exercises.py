@@ -19,10 +19,12 @@ arr_10_to_50 = np.arange(10, 51)
 # create array of numbers from 10 to 50 even numbers only
 arr_even_10_to_50 = list(filter(lambda num: (num%2 == 0), arr_10_to_50))
 # print(arr_even_10_to_50)
+# another way is to use the step argument in arange --> np.arange(10, 51, 2)
 
 # create a 3x3 array with 0-8 integers
 arr_3X3_0_to_8 = np.array([[0,1,2], [3,4,5], [6,7,8]])
 # print(arr_3X3_0_to_8)
+# another (better) ways is to use arange then reshape --> np.arange(9).reshape(3,3)
 
 # create a 3x3 identity matrix
 arr_identity_3x3 = np.eye(3)
@@ -39,6 +41,9 @@ twentyfive_ran_num = np.random.randn(25)
 # create array from 0 to 1, incremented by .01, 2d array
 arr_0_to_1_100steps = np.arange(0.01, 1.01, .01).reshape(10, 10)
 # print(arr_0_to_1_100steps)
+# other ways to do this:
+# np.arange(1, 101).reshape(10,10)/100
+# np.linspace(0.01, 1, 100).reshape(10, 10)
 
 # Create an array of 20 linearly spaced points between 0 and 1:
 second_linspace_arr = np.linspace(0, 1, 20)
