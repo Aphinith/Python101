@@ -44,6 +44,59 @@ print('\n')
 print(df.loc[ ['A', 'B'], ['Z', 'new'] ])
 print('\n')
 
+# Selecting with conditionals
+# print(df > 0) --> table of boolean values
+
+booldf = df > 0
+# print(df[booldf]) # --> table of values, true shows values, false shows NaN
+
+# Selecting rows or columns with conditionals
+print(df['Y'] > 0) # --> series of boolean values
+print('\n')
+# Passing in series will not give you null values in result, below also prints out whole dataframe
+print(df[df['Y'] > 0])
+print('\n')
+# Can stack calls onto data frames as well, for example, if just want new column:
+print(df[df['Y'] > 0]['new'])
+print('\n')
+
+# More examples using variables to store results
+boolser = df['W'] > 0
+result = df[boolser]
+print('result:')
+print(result)
+print('\n')
+# pulling multiple columns from result
+mycols = ['Y', 'Z']
+print(result[mycols]) # --> will get columns Y and Z
+print('\n')
+
+
+# Using tow or more conditions, use & for the 'and' operator. Do not use 'and', 
+# will not work on series comparisons. To use 'or', use the pipe operator '|'
+print(df[(df['Y'] > 0) & (df['new'] > 1)])
+print('\n')
+
+# resetting index, will need to pass in 'inplace=True' to keep change
+print(df.reset_index())
+print('\n');
+
+# exercise to set new index
+newind = 'CA NY WA FL'.split()
+# print(newind)
+# set new columns into df 
+df['States'] = newind
+print(df)
+print('\n')
+
+# using one of the columns to set index
+print(df.set_index('States'))
+
+
+
+
+
+
 
 
 
