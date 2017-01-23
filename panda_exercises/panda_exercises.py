@@ -24,4 +24,12 @@ d = {'a': 10, 'b': 20, 'c': 30}
 # print(pd.Series(arr, labels))
 
 #can also pass in dictionaries 
-print(pd.Series(d))
+# print(pd.Series(d))
+
+ser1 = pd.Series([1, 2, 3, 4], ['USA', 'Germany', 'USSR', 'Japan'])
+# print(ser1)
+ser2 = pd.Series([1, 2, 5, 4], ['USA', 'Germany', 'Italy', 'Japan'])
+# print(ser2)
+# can pull data from series the same way as arrays
+
+print(ser1 + ser2)
